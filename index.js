@@ -1,3 +1,5 @@
+
+
 const appointmentButton = document.querySelector('.button');
 const appointmentModal = document.querySelector('.modal');
 const closeModalButton = document.querySelector('.close');
@@ -29,7 +31,6 @@ function validateForm() {
   return true;
 }
 
-// Add event listener to the appointment form submission
 const appointmentForm = document.querySelector('.modal form');
 appointmentForm.addEventListener('submit', (event) => {
   event.preventDefault();
