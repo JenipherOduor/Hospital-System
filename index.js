@@ -1,8 +1,16 @@
-
-
+const doctorName = document.getElementById("doctor");
 const appointmentButton = document.querySelector('.button');
 const appointmentModal = document.querySelector('.modal');
 const closeModalButton = document.querySelector('.close');
+
+function fetchData(doctorID){
+  fetch(`https://reqres.in/api/users?page=2/${doctorID}`)
+   .then(response => response.json())
+   .then(data =>
+    doctorName.textContent = data.first_name
+   )
+
+}
 
 appointmentButton.addEventListener('click', () => {
   appointmentModal.style.display = 'block';
