@@ -17,6 +17,7 @@
     background-position: center ;
     opacity: calc(1);;
     font-weight: 100;
+    background-blend-mode:multiply;
     
   }
   
