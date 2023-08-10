@@ -59,6 +59,10 @@ const appointmentForm = document.querySelector('.modal form');
 appointmentForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
+  appointmentForm.addEventListener('submit', (event) => {
+    alert('Your appointment has been scheduled.')
+  })
+
   if (validateForm()) {
     alert('Your appointment has been scheduled.');
     appointmentModal.style.display = 'none';
